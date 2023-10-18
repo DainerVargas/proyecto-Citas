@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestión de Citas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Gestión de Citas</h1>
+    
+    <button id="mostrar-formulario">Agregar Cita</button>
+    
+    <form id="cita-form" style="display: none;">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required>
+        
+        <label for="sintomas">Sintomatología:</label>
+        <textarea id="sintomas" required></textarea>
+        
+        <button type="submit">Guardar Cita</button>
+    </form>
+
+
+    <table id="citas-table">
+        <thead>
+            <tr>
+                <th>Fecha</th>
+                <th>Nombre</th>
+                <th>Sintomatología</th>
+                <th>Eliminar</th>
+            </tr>
+        </thead>
+        <tbody>
+          
+        </tbody>
+    </table>
+
+    <script src="main.js"></script>
+</body>
+</html>
